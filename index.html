@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div style="float: left;">
+            <span style="font-size: 30px;">Advertiser List</span>
+        </div>
+        <div style="float: right;">
+            <span class="dropdown">
+                <button id="select-button">JSON</button>
+                <label>
+                    <input type="checkbox">
+                    <ul>
+                    <li onclick="getData('JSON')">JSON</li>
+                    <li onclick="getData('XML')">XML</li>
+                    </ul>
+                </label>
+                </span>
+        </div>
+    </div>
+    <div class="container result">
+            <xmp id="response">
+            </xmp>
+    </div>
+    <script src="scripts/ajax.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
